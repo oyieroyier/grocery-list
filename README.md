@@ -3,8 +3,7 @@
 Mastering React fundamentals by building a simple Grocery List app
 
 ## Instructor
-
-[Dave Gray](https://www.youtube.com/watch?v=RVFAyFWO4go&ab_channel=DaveGray)
+Dave Gray: [TUTORIAL HERE](https://www.youtube.com/watch?v=RVFAyFWO4go&ab_channel=DaveGray)
 
 
 ## Authors
