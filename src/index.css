@@ -1,13 +1,114 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.item {
+	background-color: #ccc;
+	margin: 1rem;
+	padding: 1rem;
+	align-self: flex-start;
+}
+.item input[type='checkbox'] {
+	height: 3rem;
+	width: 4rem;
+	text-align: center;
+}
+
+.item label {
+	font-size: 3rem;
+}
+
+.item svg {
+	color: blueviolet;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.item svg:hover {
+	color: #df2121;
+}
+footer {
+	width: 98%;
+	/* position: absolute; */
+	bottom: 0;
+}
+
+.add-form {
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	margin: 0.5rem auto;
+	padding: 0 0.5rem 0.32rem;
+	border-bottom: 1px solid #eee;
+}
+
+.add-form label {
+	position: absolute;
+	left: -99999px;
+}
+.add-form input[type='text'] {
+	flex-grow: 1;
+	max-width: calc(100%, -50px);
+	min-height: 3rem;
+	font-size: 1rem;
+	padding: 0.25rem;
+	border-radius: 0.35rem;
+	margin-inline-end: 0.25rem;
+	outline: transparent;
+}
+button {
+	align-self: center;
+	height: 3rem;
+	min-width: 3rem;
+	border-radius: 0.25rem;
+	padding: 0.5rem;
+	font-size: 1rem;
+	background-color: aliceblue;
+	color: mediumvioletred;
+	cursor: pointer;
+}
+
+button:focus,
+button:hover {
+	color: white;
+	background-color: rgb(82, 38, 82);
+	outline: transparent;
+}
+.searchForm {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 0.25rem 0 0;
+	padding: 0 0.5rem 0 0.25rem;
+	border-bottom: 1px solid #eee;
+}
+
+.searchForm label {
+	position: absolute;
+	left: -99999px;
+}
+
+.searchForm input[type='text'] {
+	display: block;
+	flex-grow: 1;
+	max-width: 70%;
+	height: 2rem;
+	margin: 1rem auto;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100dvh;
 }
