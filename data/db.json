@@ -1,0 +1,24 @@
+{
+	"items": [
+		{
+			"id": 1,
+			"checked": true,
+			"item": "Almonds, Unsalted, in the blue bag"
+		},
+		{
+			"id": 2,
+			"checked": false,
+			"item": "Macadamia Nuts"
+		},
+		{
+			"id": 3,
+			"checked": false,
+			"item": "Potatoes"
+		},
+		{
+			"id": 4,
+			"checked": false,
+			"item": "Banana Cupcakes"
+		}
+	]
+}

@@ -7,27 +7,31 @@ const LineItem = ({ item, handleCheck, handleDelete }) => {
 			className="item"
 			style={{
 				listStyle: 'none',
+				display: 'flex',
+				justifyContent: 'space-between'
 			}}
 		>
-			<input
-				type="checkbox"
-				checked={item.checked}
-				onChange={() => handleCheck(item.id)}
-			/>
-			<label
-				style={
-					item.checked
-						? {
-								textDecoration: 'line-through',
-								backgroundColor: '#999',
-								borderRadius: '10px',
-						  }
-						: null
-				}
-				onDoubleClick={() => handleCheck(item.id)}
-			>
-				{item.item}
-			</label>
+			<div>
+				<input
+					type="checkbox"
+					checked={item.checked}
+					onChange={() => handleCheck(item.id)}
+				/>
+				<label
+					style={
+						item.checked
+							? {
+									textDecoration: 'line-through',
+									backgroundColor: '#999',
+									borderRadius: '10px',
+							  }
+							: null
+					}
+					onDoubleClick={() => handleCheck(item.id)}
+				>
+					{item.item}
+				</label>
+			</div>
 			<FaTrashAlt
 				onClick={() => handleDelete(item.id)}
 				role="button"
